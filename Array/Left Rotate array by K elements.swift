@@ -20,9 +20,7 @@ print("Array after left rotate by one place using brute force is", leftRotateByK
 
 func leftRotateByKPlaceOptimalApproach(_ arr: inout [Int], _ k: Int) {
     reverseArray(&arr, 0, (k - 1))
-    print("qweqwreqwr", arr)
     reverseArray(&arr, k, (array.count - 1))
-    print("qweqwreqwr", arr)
     reverseArray(&arr, 0, (array.count - 1))
     print("Array after left rotate by one place using optimal approach is", arr)
 }
