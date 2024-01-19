@@ -50,7 +50,9 @@ func longestSubArrayUsingBetterApproach() {
         if let item = dict[remainingSum] {
             maxLength = max(maxLength, i-item)
         }
-        dict[sum] = i
+        if dict[sum] == nil {
+            dict[sum] = i
+        }
     }
     print("Longest Subarray in array \(array) with given Sum \(K) using better approach is", maxLength)
 }
