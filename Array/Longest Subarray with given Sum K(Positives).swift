@@ -1,4 +1,5 @@
 // Longest Subarray with given Sum K(Positives)
+//Longest Subarray with given Sum K(Positives & Negatves) there is no optimal approach
 
 var array = [1,2,3,1,1,1,1,4,2,3]
 var K = 4
