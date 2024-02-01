@@ -15,6 +15,8 @@ func nextPermutationusingOptimalApproach() {
     }
     
     if pivotIndex == -1 {
+        arr.reverse()
+        print("Next Permutation of array using optimal approach", arr)
         return
     } else {
     
