@@ -48,7 +48,8 @@ maxProductSubArrayElementUsingOptimalApproach()
 
 func maxProductSubArrayElementUsingKadaneApproach() {
     var max_product = array[0], maxForIndex = array[0], minForIndex = array[0]
-    for element in array {
+    for index in 1..<array.count {
+        let element = array[index]
         let tempMax = max(element, element*maxForIndex, element*minForIndex)
         minForIndex = min(element, element*maxForIndex, element*minForIndex)
         maxForIndex = tempMax
